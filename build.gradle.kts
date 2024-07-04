@@ -16,6 +16,13 @@ java {
 	}
 }
 
+buildscript {
+	dependencies {
+		val flywayVersion = "10.15.0"
+		classpath("org.flywaydb:flyway-database-postgresql:$flywayVersion")
+	}
+}
+
 repositories {
 	mavenCentral()
 }
