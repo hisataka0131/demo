@@ -28,7 +28,7 @@ dependencies {
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 	val flywayVersion = "10.15.0"
 	testImplementation("org.flywaydb:flyway-core:$flywayVersion")
-//	testImplementation("org.flywaydb:flyway-database-postgresql:$flywayVersion")
+	testImplementation("org.flywaydb:flyway-database-postgresql:$flywayVersion")
 }
 
 kotlin {
