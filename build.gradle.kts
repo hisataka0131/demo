@@ -16,12 +16,12 @@ java {
 	}
 }
 
-buildscript {
-	dependencies {
-		val flywayVersion = "10.15.0"
-		classpath("org.flywaydb:flyway-database-postgresql:$flywayVersion")
-	}
-}
+//buildscript {
+//	dependencies {
+//		val flywayVersion = "10.15.0"
+//		classpath("org.flywaydb:flyway-database-postgresql:$flywayVersion")
+//	}
+//}
 
 repositories {
 	mavenCentral()
@@ -35,7 +35,7 @@ dependencies {
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 	val flywayVersion = "10.15.0"
 	testImplementation("org.flywaydb:flyway-core:$flywayVersion")
-	testImplementation("org.flywaydb:flyway-database-postgresql:$flywayVersion")
+//	testImplementation("org.flywaydb:flyway-database-postgresql:$flywayVersion")
 }
 
 kotlin {
