@@ -24,7 +24,7 @@ buildscript {
 }
 
 repositories {
-	mavenCentral()s
+	mavenCentral()
 }
 
 dependencies {
