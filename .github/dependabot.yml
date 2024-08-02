@@ -10,14 +10,14 @@ updates:
     schedule:
       interval: weekly
       day: friday
-      time: "11:00"
+      time: "10:10"
       timezone: Asia/Tokyo
     ignore:
       - dependency-name: "*"
         update-types: [ "version-update:semver-major" ]
-      - dependency-name: "org.flywaydb.flyway:*"
-        update-types: [ "version-update:semver-major", "version-update:semver-minor", "version-update:semver-patch" ]
       - dependency-name: "org.flywaydb:*"
+        update-types: [ "version-update:semver-major", "version-update:semver-minor", "version-update:semver-patch" ]
+      - dependency-name: "org.flywaydb.flyway:*"
         update-types: [ "version-update:semver-major", "version-update:semver-minor", "version-update:semver-patch" ]
 #      - dependency-name: "org.flywaydb:flyway-core:*"
 #           # AWS環境DBをマイグレーションする際に使用する専用 docker image (内の flyway)の更新も必要となるため、無視する
