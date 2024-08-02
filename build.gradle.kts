@@ -3,7 +3,7 @@ plugins {
 	id("io.spring.dependency-management") version "1.1.5"
 	kotlin("jvm") version "1.9.24"
 	kotlin("plugin.spring") version "1.9.24"
-	val flywayVersion = "10.15.0"
+	val flywayVersion = "10.17.0"
 	id("org.flywaydb.flyway") version flywayVersion
 }
 
@@ -35,7 +35,7 @@ dependencies {
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 	val flywayVersion = "10.15.0"
 	testImplementation("org.flywaydb:flyway-core:$flywayVersion")
-	testImplementation("org.flywaydb:flyway-database-postgresql:10.15.0")
+	testImplementation("org.flywaydb:flyway-database-postgresql:10.17.0")
 }
 
 kotlin {
